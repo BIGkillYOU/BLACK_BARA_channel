@@ -3,12 +3,12 @@
 :root {
     --main-color: #0026a1;
     --black900: #01010F;
-    --black400: #555555;
-    --black100: #3A3A3A;
+    --black400: #c7c7c7;
+    --black100: #ffffff;
     --white: #FFFFFF;
-    --white100: #F7F7F7;
+    --white100: #008aef;
 
-    --shadow-black100: 0 5px 15px rgba(0, 0, 0, .1);
+    --shadow-black100: 0 5px 15px rgba(0, 0, 0, .5);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; outline: none; }
@@ -33,13 +33,24 @@ img { vertical-align: middle; max-width: 100%; }
 .justify-content-between { justify-content: space-between; }
 .align-items-center { align-items: center; }
 .full-screen { padding: 80px 0 0; min-height: 100vh; }
-.section-padding { padding: 80px 0; }
+.section-padding { padding: 25px 0; }
 .full-width { width: 100%; }
+
+p {
+      /*font-size: 28px;
+      font-weight: bold;
+      color: #000;
+       ใส่เงา: x-offset, y-offset, blur, color */
+      text-shadow: 2px 3px 5px rgba(0,0,0,0.7);
+}
+h1,h2,h3,h4 {
+      text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
 
 .section-title {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
     text-align: center;
 }
 
@@ -180,7 +191,7 @@ img { vertical-align: middle; max-width: 100%; }
 .logo-circle {
     height: 26px;
     width: 26px;
-    border: 4px solid var(--black900);
+    border: 4px solid var(--white);
     display: inline-block;
     border-radius: 50%;
     margin-bottom: -2px;
@@ -191,7 +202,7 @@ img { vertical-align: middle; max-width: 100%; }
         content: '';
         height: 8px;
         width: 8px;
-        background-color: var(--black900);
+        background-color: var(--white);
         border-radius: 50%;
         position: absolute;
         left: 50%;
@@ -224,7 +235,8 @@ img { vertical-align: middle; max-width: 100%; }
         width: 100%;
         height: 130%;
         bottom: 0;
-        background-image: url('../img/Illusioหฟหns.png');
+        background-image: url('https://raw.githubusercontent.com/BIGkillYOU/BLACK_BARA_channel/main/img/Illusioหฟหns.png');
+        
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -345,7 +357,7 @@ img { vertical-align: middle; max-width: 100%; }
         .product-item .product-item-inner:hover .card-img { margin-left: 3rem; }
         .product-item .product-item-inner:hover .card-prices { margin-left: 3rem; padding: 0 1.5rem; }
 
-.card-img { width: 100px; padding-bottom: 20px; transition: all .5s ease-in; }
+.card-img { width: 100px; /*padding-bottom: 20px;*/ transition: all .5s ease-in; }
 
 .card-name { 
     position: absolute;
@@ -359,7 +371,7 @@ img { vertical-align: middle; max-width: 100%; }
     justify-content: center;
     align-items: center;
     background-color: var(--black100);
-    color: var(--white);
+    color: var(--black900);
     font-weight: bold;
     transition: all .5s ease-in; 
 }
